@@ -18,15 +18,14 @@ class main:
             # print('4. Tanh function')
             try:
                 activation_function = int(input('Choose one from the list of activation functions: '))
-                # node_layer1 = int(input('Import number of nodes in first layer (hidden layer): '))
-                node_layer1 = 3
-                # learning_rate = float(input('enter learning rate: '))
-                learning_rate = 0.001
-                # path = input('enter tha path of the file: ')
-                path = 'C:/Users/Fatemeh/Documents/Interview-Preparation/DeepLearning/data_sample.csv'
-                # iteration = int(input('enter the number of iterations: '))
-                print()
-                iteration = 1000
+                node_layer1 = int(input('Import number of nodes in first layer (hidden layer): '))
+                # node_layer1 = 3
+                learning_rate = float(input('enter learning rate: '))
+                # learning_rate = 0.001
+                path = input('enter tha path of the file: ')
+                iteration = int(input('enter the number of iterations: '))
+                print("List of normalization functions:")
+                # iteration = 1000
                 print('1. Max Abs Scaling')
                 print('2. Robust Scaler')
                 print('3. Z-Score Normalization')
@@ -71,4 +70,3 @@ class main:
 if __name__ == '__main__':
     obj = main()
     obj.show_menu()
-    # path = 'C:/Users/Fatemeh/Documents/Interview-Preparation/DeepLearning/data_sample.csv'
