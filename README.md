@@ -19,6 +19,7 @@ Navigate to the cloned repository
 
 Install the following libraries:
  pip install numpy
+ 
  pip install pandas
 
 ## Usage
@@ -31,26 +32,6 @@ python main.py
 
 You can modify `main.py` to customize the network configuration, training parameters, and data paths according to your needs.
 
-## Examples
-
-Below is a simple example of how to use the framework:
-
-```python
-from deeplearning.activation_functions import ActivationFunctions
-from deeplearning.deep_learning import DeepLearning
-
-# Example data (X as inputs and y as labels)
-X = [[0, 0], [0, 1], [1, 0], [1, 1]]
-y = [0, 1, 1, 0]
-
-# Initialize the model
-model = DeepLearning(data=X, label=y, node_layer1=5, num_iteration=1000, learning_rate=0.001, activation_function=1)
-
-# Train the model
-model.backward()
-
-# Predict
-predictions = model.forward()
 ```
 
 ## Contact
