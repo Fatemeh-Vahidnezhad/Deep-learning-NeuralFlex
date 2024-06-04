@@ -2,29 +2,26 @@ import numpy as np
 
 
 class NormalizeData:
-    def __init__(self, data):
-        self.data = data
-
-    def min_max_func(self):
-        minn = np.min(self.data, axis=0)
-        maxx = np.max(self.data, axis=0)
+    def min_max_func(self, data):
+        minn = np.min(data, axis=0)
+        maxx = np.max(data, axis=0)
         # result between -1 and 1
-        return 2 * ((self.data - minn) / (maxx - minn)) - 1
+        return 2 * ((data - minn) / (maxx - minn)) - 1
 
-    def z_score(self):
-        meann = np.mean(self.data, axis=0)
-        stdd = np.std(self.data, axis=0)
-        return (self.data - meann)/stdd
+    def z_score(self, data):
+        meann = np.mean(data, axis=0)
+        stdd = np.std(data, axis=0)
+        return (data - meann)/stdd
 
-    def max_abs(self):
-        return self.data/np.abs(self.data).max()
+    def max_abs(self, data):
+        return data/np.abs(data).max()
 
-    def robust_scale(self):
-        mediann = np.median(self.data, axis=0)
-        q_25 = np.quantile(self.data, 0.25, axis=0)
-        q_75 = np.quantile(self.data, 0.75, axis=0)
+    def robust_scale(self, data):
+        mediann = np.median(data, axis=0)
+        q_25 = np.quantile(data, 0.25, axis=0)
+        q_75 = np.quantile(data, 0.75, axis=0)
         IQR = q_75 - q_25
-        return (self.data - mediann)/IQR
+        return (data - mediann)/IQR
 
 
 # import pandas as pd
