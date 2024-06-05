@@ -8,22 +8,22 @@ Loss Functions:
 This module includes various loss functions essential for training deep learning models, supporting both calculation and derivation of loss metrics.
 
       Functions included:
-      cross_Entropy_Loss()
-      categorical_Cross_Entropy_Loss()
-      mean_squared_error()
-      derivative_cross_Entropy_Loss()
-      derivative_categorical_Cross_Entropy_Loss()
+            cross_Entropy_Loss()
+            categorical_Cross_Entropy_Loss()
+            mean_squared_error()
+            derivative_cross_Entropy_Loss()
+            derivative_categorical_Cross_Entropy_Loss()
 **Evaluation**
 The evaluation module provides functions to assess the accuracy and performance of the models.
 
 **Metrics provided**
 
     Included functions:
-      recall()
-      accuracy()
-      precision()
-      F1_score()
-      precision_multiclass_macro()
+            recall()
+            accuracy()
+            precision()
+            F1_score()
+            precision_multiclass_macro()
 
 **Deep Learning**
 Central to the framework, this component orchestrates the creation, training, and backpropagation for neural networks with a structure of one hidden layer and one output layer.
@@ -38,11 +38,11 @@ Implementation of training procedures and backward propagation.
 Defines various activation functions used within neural networks, each with its derivative for use in backpropagation.
 
     Included functions:
-    sigmoid()
-    softmax()
-    ReLU()
-    Tanh()
-    Derivatives for each activation function.
+          sigmoid()
+          softmax()
+          ReLU()
+          Tanh()
+          Derivatives for each activation function.
     
 **Data Handling**
    Sample Dataset: A module to handle sample datasets for testing and demonstration purposes.
