@@ -60,15 +60,15 @@ class Evaluation:
         return precision, recall
 
 
-    def precision_mulitclass_each(self):
-        y_true_labels = np.argmax(self.y, axis=1)
-        y_pred_labels = np.argmax(self.y_pred, axis=1)
-        precision_each = precision_score(y_true_labels, y_pred_labels, average=None, zero_division=1)
-        recall_each = recall_score(y_true_labels, y_pred_labels, average=None, zero_division=1)
+    # def precision_mulitclass_each(self):
+    #     y_true_labels = np.argmax(self.y, axis=1)
+    #     y_pred_labels = np.argmax(self.y_pred, axis=1)
+    #     precision_each = precision_score(y_true_labels, y_pred_labels, average=None, zero_division=1)
+    #     recall_each = recall_score(y_true_labels, y_pred_labels, average=None, zero_division=1)
 
-        # print("Precision for each class:", precision_each)
-        # print("Recall for each class:", recall_each)
-        return precision_each, recall_each
+    #     # print("Precision for each class:", precision_each)
+    #     # print("Recall for each class:", recall_each)
+    #     return precision_each, recall_each
 
 
 

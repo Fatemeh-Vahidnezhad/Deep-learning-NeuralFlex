@@ -80,7 +80,7 @@ class DeepLearning:
     def clip_gradients(self, gradient):
         return np.clip(gradient, -1, 1)  # Clipping gradients to be between -1 and 1
 
-    def backward(self):
+    def backpropagation(self):
         # dw2 = dj/da2 * da2/dz2 * dz2/dw2
         # db2 = dj/da2 * da2/dz2 * dz2/db2
         if self.num_classes == 2:
@@ -113,7 +113,7 @@ class DeepLearning:
     def train(self, num_iteration):
         for i in range(num_iteration):
             self.layers(self.node_layer1)
-            self.backward()
+            self.backpropagation()
             eval = Evaluation(y=self.y, y_pred=self.y_pred)
             if self.num_classes ==2:
                 if i % 10 == 0:
