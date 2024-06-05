@@ -3,6 +3,12 @@
 This project provides a lightweight and flexible Python framework for building and training deep neural networks.
 It includes various activation functions, loss functions, and normalization techniques to cater to different neural network architectures and needs.
 
+The deep learning framework is designed to handle a wide range of supervised learning tasks, including classification problems. Here are the specific types of classification tasks our model supports:
+
+Binary Classification: The model can distinguish between two classes. This is useful for yes/no type decisions, such as determining whether an email is spam or not spam.
+Multiclass Classification: The model is capable of classifying inputs into multiple categories. This is applicable to scenarios such as image recognition where each input may be categorized into one of several predefined classes.
+
+
 # Components
 Loss Functions:
 This module includes various loss functions essential for training deep learning models, supporting both calculation and derivation of loss metrics.
