@@ -82,6 +82,10 @@ To start using the framework, you can run one of the sample datasets as follows:
 
 ```bash
 python iris_dataset.py
+or
+python MNIST.py
+or 
+python breast_cancer.py
 ```
 
 ## Contact
