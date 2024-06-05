@@ -17,11 +17,14 @@ This module includes various loss functions essential for training deep learning
 The evaluation module provides functions to assess the accuracy and performance of the models.
 
 **Metrics provided**
+
+    Included functions:
       recall()
       accuracy()
       precision()
       F1_score()
       precision_multiclass_macro()
+
 **Deep Learning**
 Central to the framework, this component orchestrates the creation, training, and backpropagation for neural networks with a structure of one hidden layer and one output layer.
 
