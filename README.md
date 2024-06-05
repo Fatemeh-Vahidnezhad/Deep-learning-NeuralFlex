@@ -32,6 +32,8 @@ Key functionalities:
 Handling of data and target labels.
 Definition of the network architecture (number of nodes in the hidden layer).
 Implementation of training procedures and backward propagation.
+
+
 **Activation Functions**
 Defines various activation functions used within neural networks, each with its derivative for use in backpropagation.
 
@@ -41,6 +43,7 @@ Defines various activation functions used within neural networks, each with its 
     ReLU()
     Tanh()
     Derivatives for each activation function.
+    
 **Data Handling**
    Sample Dataset: A module to handle sample datasets for testing and demonstration purposes.
     Normalization: Methods to normalize data, which is critical for the efficient training of deep learning models.
@@ -60,8 +63,11 @@ Navigate to the cloned repository
 Install the following libraries:
 
  pip install numpy
+ 
  pip install sklearn
+ 
  pip install pandas
+ 
 
 ## Usage
 
