@@ -41,6 +41,8 @@ Defines various activation functions used within neural networks, each with its 
 **Data Handling**
    Sample Dataset: A module to handle sample datasets for testing and demonstration purposes.
     Normalization: Methods to normalize data, which is critical for the efficient training of deep learning models.
+    
+    Included functions:
           min_max_func()
           z_score()
           max_abs()
