@@ -55,8 +55,8 @@ class Evaluation:
         y_pred_labels = np.argmax(self.y_pred, axis=1)
 
         # Calculate precision and recall
-        precision = precision_score(y_true_labels, y_pred_labels, average='macro', , zero_division=0)
-        recall = recall_score(y_true_labels, y_pred_labels, average='macro', , zero_division=0)
+        precision = precision_score(y_true_labels, y_pred_labels, average='macro', zero_division=0)
+        recall = recall_score(y_true_labels, y_pred_labels, average='macro', zero_division=0)
         return precision, recall
 
 
